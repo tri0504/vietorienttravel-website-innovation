@@ -1,0 +1,23 @@
+// Design tokens are centralized here so visual changes do not require a repo-wide search.
+$color-primary: #1F4D3A;
+$color-primary-hover: #285E47;
+$color-accent: #C8A96A;
+$color-background: #F8F6F2;
+$color-surface: #FFFFFF;
+$color-heading: #222222;
+$color-body: #555555;
+$color-border: #E5E5E5;
+
+$font-heading: 'Playfair Display', Georgia, serif;
+$font-body: 'Inter', Helvetica, sans-serif;
+
+$container-width: 1200px;
+$space-1: 8px;
+$space-2: 16px;
+$space-3: 24px;
+$space-4: 40px;
+$space-5: 64px;
+$space-6: 96px;
+$space-7: 140px;
+$radius: 16px;
+$transition: 300ms ease;

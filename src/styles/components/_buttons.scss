@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// One button class supports both routed links and native actions.
+.button {
+  background: $color-primary;
+  border: 1px solid $color-primary;
+  border-radius: $radius;
+  color: $color-surface;
+  display: inline-flex;
+  padding: $space-2 $space-3;
+  transition: background-color $transition, border-color $transition;
+}
+
+.button:hover {
+  background: $color-primary-hover;
+  border-color: $color-primary-hover;
+}
+
+.button:focus-visible,
+.icon-button:focus-visible,
+a:focus-visible {
+  @include focus-ring;
+}

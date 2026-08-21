@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as *;
+
+// Available to assistive technology without adding visual layout content.
+.visually-hidden {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  clip: rect(0 0 0 0);
+}
+
+// Shared heading rhythm keeps future sections visually consistent.
+.section-header {
+  margin-bottom: $space-4;
+  max-width: 680px;
+}
+
+.section-header__eyebrow {
+  color: $color-accent;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  margin-top: $space-1;
+}
+
+.section-header > p:last-child {
+  margin-top: $space-2;
+}

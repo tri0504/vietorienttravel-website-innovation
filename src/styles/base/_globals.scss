@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Global page defaults are intentionally minimal; components own their details.
+body {
+  background: $color-background;
+}
+
+.container {
+  // The mixin keeps all page content aligned to the same design-system grid.
+  @include container;
+}
+
+#main-content {
+  min-height: 60vh;
+  padding-block: $space-7;
+}

@@ -1,0 +1,77 @@
+@use '../abstracts/variables' as *;
+
+// Header and footer share surface and alignment rules while keeping separate borders.
+.site-header,
+.site-footer {
+  background: $color-surface;
+  border-bottom: 1px solid $color-border;
+}
+
+.site-header__inner,
+.site-footer__inner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+.site-header__brand,
+.site-footer__brand {
+  color: $color-primary;
+  font-family: $font-heading;
+  font-size: 1.25rem;
+}
+
+.site-header__nav,
+.site-footer nav {
+  display: flex;
+  gap: $space-3;
+}
+
+.site-header__nav a {
+  color: $color-body;
+  transition: color $transition;
+}
+
+.site-header__nav a:hover,
+.site-header__nav a.active {
+  color: $color-primary;
+}
+
+.site-header__menu {
+  display: none;
+}
+
+.site-footer {
+  border-bottom: 0;
+  border-top: 1px solid $color-border;
+}
+
+@media (max-width: 720px) {
+  // Navigation is hidden at the mobile breakpoint until menu interaction is added.
+  .site-header__nav {
+    display: none;
+  }
+
+  .site-header__menu {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    color: $color-primary;
+    display: flex;
+    justify-content: center;
+    padding: $space-1;
+  }
+
+  .site-footer__inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: $space-2;
+    padding-block: $space-3;
+  }
+
+  .site-footer nav {
+    flex-wrap: wrap;
+    gap: $space-2;
+  }
+}

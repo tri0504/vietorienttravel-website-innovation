@@ -1,0 +1,7 @@
+// Load Sass layers from low-level foundations to component-specific rules.
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/globals';
+@use 'components/layout';
+@use 'components/buttons';
+@use 'utilities/utilities';

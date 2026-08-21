@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+// Applies the shared max-width and horizontal padding to any page region.
+@mixin container {
+  width: min(calc(100% - #{$space-3 * 2}), $container-width);
+  margin-inline: auto;
+}
+
+// Keeps keyboard focus visible against both light surfaces and brand colors.
+@mixin focus-ring {
+  outline: 3px solid rgba($color-accent, 0.55);
+  outline-offset: 3px;
+}
