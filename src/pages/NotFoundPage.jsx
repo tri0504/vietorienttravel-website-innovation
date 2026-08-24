@@ -1,3 +1,4 @@
+// Fallback page shown when a requested route does not exist.
 import { Link } from 'react-router-dom';
 import { Container } from '../components/ui/Container.jsx';
 

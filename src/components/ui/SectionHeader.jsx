@@ -1,3 +1,4 @@
+// Reusable heading block for page and content sections.
 export function SectionHeader({ eyebrow, title, description }) {
   return (
     <header className="section-header">

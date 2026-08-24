@@ -1,3 +1,4 @@
+// Site footer with shared navigation and supporting information.
 import { Link } from 'react-router-dom';
 import { navigationLinks } from '../../data/navigation.js';
 

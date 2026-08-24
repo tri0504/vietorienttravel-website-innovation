@@ -1,3 +1,4 @@
+// Site header containing navigation and responsive menu controls.
 import { Link, NavLink } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 import { navigationLinks } from '../../data/navigation.js';

@@ -1,3 +1,4 @@
+// Experience listing page built from the shared experience data.
 import { Container } from '../components/ui/Container.jsx';
 import { experiences } from '../data/experiences.js';
 

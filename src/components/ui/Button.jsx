@@ -1,3 +1,4 @@
+// Reusable button that supports both routed links and native actions.
 import { Link } from 'react-router-dom';
 
 export function Button({ children, to, type = 'button', ...props }) {

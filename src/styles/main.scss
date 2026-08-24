@@ -1,3 +1,4 @@
+// Main Sass entry point that assembles the site's style layers.
 // Load Sass layers from low-level foundations to component-specific rules.
 @use 'base/reset';
 @use 'base/typography';

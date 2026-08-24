@@ -1,3 +1,4 @@
+// Destination listing page built from the shared destination data.
 import { Container } from '../components/ui/Container.jsx';
 import { destinations } from '../data/destinations.js';
 

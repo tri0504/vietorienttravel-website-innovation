@@ -1,3 +1,4 @@
+// Review listing page built from the shared guest review data.
 import { Container } from '../components/ui/Container.jsx';
 import { reviews } from '../data/reviews.js';
 

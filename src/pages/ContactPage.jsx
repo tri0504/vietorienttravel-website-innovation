@@ -1,3 +1,4 @@
+// Contact page composition for travel inquiries and contact details.
 import { Container } from '../components/ui/Container.jsx';
 
 export function ContactPage() {

@@ -1,3 +1,4 @@
+// Defines the application routes and their shared site layout.
 import { Route, Routes } from 'react-router-dom';
 import { SiteLayout } from './components/layout/SiteLayout.jsx';
 import { AboutPage } from './pages/AboutPage.jsx';

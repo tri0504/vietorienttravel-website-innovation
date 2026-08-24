@@ -1,3 +1,4 @@
+// About page composition and introductory travel-company content.
 import { Container } from '../components/ui/Container.jsx';
 
 export function AboutPage() {

@@ -1,3 +1,4 @@
+// Application entry point that mounts the React router and root component.
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';

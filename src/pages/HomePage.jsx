@@ -1,3 +1,4 @@
+// Homepage composition for the primary travel discovery experience.
 import { Container } from '../components/ui/Container.jsx';
 
 export function HomePage() {

@@ -1,3 +1,4 @@
+// Destination content records used across the travel experience.
 // Content records stay independent from page markup so a CMS adapter can
 // replace this module without changing destination components.
 export const destinations = [
