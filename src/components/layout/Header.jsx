@@ -9,7 +9,7 @@ export function Header() {
       <div className="container site-header__inner">
         {/* The brand link is always available as the primary way back home. */}
         <Link className="site-header__brand" to="/" aria-label="Viet Orient Travel home">
-          Viet Orient Travel
+          <img className="site-header__logo" src="/media/general/vot%20logo.png" alt="" />
         </Link>
         <nav className="site-header__nav" aria-label="Primary navigation">
           {/* Navigation labels and URLs come from data, not duplicated JSX. */}

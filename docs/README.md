@@ -20,6 +20,8 @@ We are not competing with Expedia or Booking.com.
 
 We are selling confidence, expertise, and meaningful travel experiences.
 
+The redesigned website should be simple but informative. Although modern tools and apps have made travel planning easier than ever, Viet Orient Travel makes a difference through personal expertise, thoughtful guidance, and journeys shaped around each traveler.
+
 ## Design Philosophy
 
 The website should evoke five emotions:

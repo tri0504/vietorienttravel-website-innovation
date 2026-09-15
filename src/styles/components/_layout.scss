@@ -23,10 +23,35 @@
   font-size: 1.25rem;
 }
 
+.site-header__brand {
+  align-items: center;
+  display: flex;
+}
+
+.site-header__logo {
+  display: block;
+  height: 56px;
+  width: auto;
+}
+
 .site-header__nav,
 .site-footer nav {
   display: flex;
   gap: $space-3;
+}
+
+@media (min-width: $breakpoint-wide) {
+  .site-header__nav,
+  .site-footer nav {
+    gap: $space-4;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .site-header__nav,
+  .site-footer nav {
+    gap: $space-2;
+  }
 }
 
 .site-header__nav a {
@@ -48,7 +73,7 @@
   border-top: 1px solid $color-border;
 }
 
-@media (max-width: 720px) {
+@media (max-width: $breakpoint-mobile) {
   // Navigation is hidden at the mobile breakpoint until menu interaction is added.
   .site-header__nav {
     display: none;
@@ -62,6 +87,10 @@
     display: flex;
     justify-content: center;
     padding: $space-1;
+  }
+
+  .site-header__logo {
+    height: 48px;
   }
 
   .site-footer__inner {

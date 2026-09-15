@@ -16,3 +16,15 @@ body {
   min-height: 60vh;
   padding-block: $space-7;
 }
+
+@media (max-width: $breakpoint-tablet) {
+  #main-content {
+    padding-block: $space-6;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  #main-content {
+    padding-block: $space-5;
+  }
+}
