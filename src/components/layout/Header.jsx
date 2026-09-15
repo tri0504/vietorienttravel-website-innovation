@@ -20,6 +20,7 @@ export function Header() {
             </NavLink>
           ))}
         </nav>
+        {/* Keep the main conversion visible on spacious layouts and hide it at tablet widths. */}
         <Button className="site-header__cta" to="/contact">Plan Your Journey</Button>
         {/* The menu button is the mobile-navigation hook for a future menu state. */}
         <button className="icon-button site-header__menu" type="button" aria-label="Open navigation">

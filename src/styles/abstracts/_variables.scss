@@ -13,6 +13,7 @@ $font-heading: 'Playfair Display', Georgia, serif;
 $font-body: 'Inter', Helvetica, sans-serif;
 
 $container-width: 1200px;
+// Shared responsive thresholds keep layout behavior consistent across components.
 $breakpoint-wide: 1440px;
 $breakpoint-tablet: 960px;
 $breakpoint-mobile: 720px;

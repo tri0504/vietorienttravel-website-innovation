@@ -13,6 +13,7 @@ body {
 }
 
 .home-page {
+  // Let the homepage hero begin directly beneath the shared header padding.
   margin-block: -$space-7;
 }
 
@@ -22,6 +23,7 @@ body {
 }
 
 @media (max-width: $breakpoint-tablet) {
+  // Reduce the homepage edge compensation with the main content spacing at tablet widths.
   .home-page {
     margin-block: -$space-6;
   }

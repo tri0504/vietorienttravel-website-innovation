@@ -29,12 +29,14 @@
 }
 
 .site-header__logo {
+  // Width controls scale while height:auto preserves the supplied logo aspect ratio.
   display: block;
   height: auto;
   width: 160px;
 }
 
 .site-header__cta {
+  // The CTA is intentionally restrained so the logo and navigation remain primary.
   border-radius: 8px;
   margin-left: $space-3;
   padding: 12px $space-3;
@@ -48,6 +50,7 @@
 }
 
 @media (min-width: $breakpoint-wide) {
+  // Give navigation more room on wide displays without changing its content.
   .site-header__nav,
   .site-footer nav {
     gap: $space-4;
@@ -55,6 +58,7 @@
 }
 
 @media (max-width: $breakpoint-tablet) {
+  // Let the header breathe at tablet widths by removing the optional CTA.
   .site-header__nav,
   .site-footer nav {
     gap: $space-2;

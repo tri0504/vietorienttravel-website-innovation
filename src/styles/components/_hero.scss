@@ -3,6 +3,7 @@
 @use 'sass:color';
 
 .hero {
+  // The custom property lets the real Vietnam image be swapped in later without rewriting this partial.
   align-items: center;
   background-color: $color-primary;
   background-image: var(--hero-image, none);
@@ -17,6 +18,7 @@
 }
 
 .hero__overlay {
+  // A separate overlay preserves readable text without replacing the brand-colored fallback surface.
   background: linear-gradient(90deg, rgba(17, 34, 27, 0.7) 0%, rgba(17, 34, 27, 0.32) 46%, rgba(17, 34, 27, 0.04) 82%);
   inset: 0;
   position: absolute;
@@ -55,6 +57,7 @@
 }
 
 .hero__actions {
+  // Keep the two calls to action aligned on larger screens and stacked on mobile.
   display: flex;
   flex-wrap: wrap;
   gap: $space-2;

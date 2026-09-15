@@ -6,4 +6,6 @@
 @use 'components/layout';
 @use 'components/buttons';
 @use 'components/hero';
+// Homepage-specific philosophy section follows the reusable hero styles.
+@use 'components/why-travel';
 @use 'utilities/utilities';

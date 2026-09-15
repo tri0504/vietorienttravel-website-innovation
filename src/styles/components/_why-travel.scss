@@ -1,0 +1,147 @@
+// Editorial introduction to Viet Orient Travel's philosophy.
+@use '../abstracts/variables' as *;
+
+.why-travel {
+  // The warm band creates a calm transition from the hero into the homepage content.
+  background: $color-background;
+  padding-block: $space-7;
+}
+
+.why-travel__intro {
+  // Split the editorial heading from its concise supporting explanation on larger screens.
+  align-items: end;
+  display: grid;
+  gap: $space-6;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+}
+
+.section-eyebrow {
+  color: $color-primary;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  margin-bottom: $space-3;
+  text-transform: uppercase;
+}
+
+.why-travel h2 {
+  color: $color-heading;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.08;
+  margin: 0;
+  max-width: 760px;
+}
+
+.why-travel__summary {
+  border-left: 1px solid $color-accent;
+  color: $color-body;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 440px;
+  padding-left: $space-3;
+}
+
+.why-travel__reasons {
+  // Thin dividers create structure without turning the philosophy points into cards.
+  border-top: 1px solid $color-border;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: $space-7;
+}
+
+.why-travel__reason {
+  border-bottom: 1px solid $color-border;
+  min-height: 220px;
+  padding: $space-4 $space-4 $space-4 0;
+}
+
+.why-travel__reason:nth-child(odd) {
+  border-right: 1px solid $color-border;
+  padding-right: $space-5;
+}
+
+.why-travel__reason:nth-child(even) {
+  padding-left: $space-5;
+}
+
+.why-travel__number {
+  color: $color-accent;
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  margin-bottom: $space-4;
+}
+
+.why-travel h3 {
+  color: $color-primary;
+  font-family: $font-body;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0 0 $space-2;
+}
+
+.why-travel__reason p {
+  color: $color-body;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 320px;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .why-travel {
+    padding-block: $space-6;
+  }
+
+  .why-travel__intro {
+    gap: $space-4;
+    grid-template-columns: minmax(0, 1fr) minmax(250px, 0.8fr);
+  }
+
+  .why-travel h2 {
+    font-size: 3rem;
+  }
+
+  .why-travel__reasons {
+    margin-top: $space-6;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  // Mobile collapses the editorial grid into a comfortable reading order.
+  .why-travel {
+    padding-block: $space-5;
+  }
+
+  .why-travel__intro {
+    display: block;
+  }
+
+  .why-travel h2 {
+    font-size: 2.5rem;
+  }
+
+  .why-travel__summary {
+    margin-top: $space-4;
+    max-width: none;
+  }
+
+  .why-travel__reasons {
+    display: block;
+    margin-top: $space-5;
+  }
+
+  .why-travel__reason,
+  .why-travel__reason:nth-child(odd),
+  .why-travel__reason:nth-child(even) {
+    border-right: 0;
+    min-height: 0;
+    padding: $space-4 0;
+  }
+
+  .why-travel__reason:first-child {
+    padding-top: $space-3;
+  }
+}
