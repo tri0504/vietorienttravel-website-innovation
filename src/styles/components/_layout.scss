@@ -13,7 +13,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  min-height: 80px;
+  min-height: 88px;
 }
 
 .site-header__brand,
@@ -30,8 +30,15 @@
 
 .site-header__logo {
   display: block;
-  height: 56px;
-  width: auto;
+  height: auto;
+  width: 160px;
+}
+
+.site-header__cta {
+  border-radius: 8px;
+  margin-left: $space-3;
+  padding: 12px $space-3;
+  white-space: nowrap;
 }
 
 .site-header__nav,
@@ -51,6 +58,14 @@
   .site-header__nav,
   .site-footer nav {
     gap: $space-2;
+  }
+
+  .site-header__cta {
+    display: none;
+  }
+
+  .site-header__logo {
+    width: 148px;
   }
 }
 
@@ -90,7 +105,7 @@
   }
 
   .site-header__logo {
-    height: 48px;
+    width: 132px;
   }
 
   .site-footer__inner {

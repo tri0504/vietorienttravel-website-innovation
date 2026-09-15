@@ -1,6 +1,7 @@
 // Site header containing navigation and responsive menu controls.
 import { Link, NavLink } from 'react-router-dom';
 import { Menu } from 'lucide-react';
+import { Button } from '../ui/Button.jsx';
 import { navigationLinks } from '../../data/navigation.js';
 
 export function Header() {
@@ -19,6 +20,7 @@ export function Header() {
             </NavLink>
           ))}
         </nav>
+        <Button className="site-header__cta" to="/contact">Plan Your Journey</Button>
         {/* The menu button is the mobile-navigation hook for a future menu state. */}
         <button className="icon-button site-header__menu" type="button" aria-label="Open navigation">
           <Menu size={20} aria-hidden="true" />

@@ -1,0 +1,133 @@
+// Editorial hero surface with a replaceable Vietnam photography asset.
+@use '../abstracts/variables' as *;
+@use 'sass:color';
+
+.hero {
+  align-items: center;
+  background-color: $color-primary;
+  background-image: var(--hero-image, none);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  isolation: isolate;
+  min-height: clamp(560px, 78vh, 820px);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__overlay {
+  background: linear-gradient(90deg, rgba(17, 34, 27, 0.7) 0%, rgba(17, 34, 27, 0.32) 46%, rgba(17, 34, 27, 0.04) 82%);
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero__content {
+  color: $color-surface;
+  padding-block: $space-7;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__eyebrow {
+  color: $color-accent;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  margin-bottom: $space-3;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  color: $color-surface;
+  font-size: 4.5rem;
+  line-height: 1.05;
+  margin: 0;
+  max-width: 760px;
+}
+
+.hero__intro {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-top: $space-4;
+  max-width: 560px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+  margin-top: $space-5;
+}
+
+.hero .button {
+  border-radius: 8px;
+  padding: 14px $space-3;
+}
+
+.hero .button:not(.button--secondary) {
+  background: $color-accent;
+  border-color: $color-accent;
+  color: $color-heading;
+}
+
+.hero .button:not(.button--secondary):hover {
+  background: color.adjust($color-accent, $lightness: 8%);
+  border-color: color.adjust($color-accent, $lightness: 8%);
+}
+
+.hero .button--secondary {
+  background: transparent;
+  border-color: rgba($color-surface, 0.8);
+  color: $color-surface;
+}
+
+.hero .button--secondary:hover {
+  background: rgba($color-surface, 0.12);
+  border-color: $color-surface;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .hero {
+    background-position: 62% center;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    max-width: 640px;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .hero {
+    background-position: 64% center;
+    min-height: 620px;
+  }
+
+  .hero__overlay {
+    background: linear-gradient(90deg, rgba(17, 34, 27, 0.68) 0%, rgba(17, 34, 27, 0.3) 100%);
+  }
+
+  .hero__content {
+    padding-block: $space-6;
+  }
+
+  .hero h1 {
+    font-size: 2.75rem;
+  }
+
+  .hero__intro {
+    font-size: 1rem;
+  }
+
+  .hero__actions {
+    align-items: stretch;
+    flex-direction: column;
+    max-width: 280px;
+  }
+
+  .hero .button {
+    justify-content: center;
+  }
+}
