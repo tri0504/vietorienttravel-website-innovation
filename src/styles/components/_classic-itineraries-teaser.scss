@@ -1,0 +1,118 @@
+@use '../abstracts/variables' as *;
+
+.classic-itineraries-teaser {
+  background: $color-surface;
+  padding-block: $space-7;
+}
+
+.classic-itineraries-teaser__heading {
+  align-items: end;
+  display: grid;
+  gap: $space-6;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.7fr);
+  margin-bottom: $space-5;
+}
+
+.classic-itineraries-teaser h2 {
+  color: $color-primary;
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: 1.05;
+  margin: 0;
+  max-width: 680px;
+}
+
+.classic-itineraries-teaser__heading > p {
+  border-left: 1px solid $color-accent;
+  color: $color-body;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 420px;
+  padding-left: $space-3;
+}
+
+.classic-itineraries-teaser__grid {
+  display: grid;
+  gap: $space-3;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.classic-itineraries-teaser .classic-itinerary-card {
+  display: block;
+  height: 100%;
+}
+
+.classic-itineraries-teaser .classic-itinerary-card__image {
+  min-height: 300px;
+}
+
+.classic-itineraries-teaser .classic-itinerary-card__content {
+  padding: $space-4;
+}
+
+.classic-itineraries-teaser .classic-itinerary-card h2 {
+  color: $color-heading;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  margin-top: $space-3;
+}
+
+.classic-itineraries-teaser__action {
+  border-top: 1px solid $color-border;
+  margin-top: $space-5;
+  padding-top: $space-3;
+  text-align: right;
+}
+
+.classic-itineraries-teaser__action a {
+  align-items: center;
+  color: $color-primary;
+  display: inline-flex;
+  font-size: 0.8rem;
+  font-weight: 600;
+  gap: $space-1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.classic-itineraries-teaser__action a:hover {
+  color: #762f39;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .classic-itineraries-teaser__heading {
+    gap: $space-4;
+  }
+
+  .classic-itineraries-teaser__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .classic-itineraries-teaser .classic-itinerary-card:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .classic-itineraries-teaser {
+    padding-block: $space-5;
+  }
+
+  .classic-itineraries-teaser__heading {
+    display: block;
+  }
+
+  .classic-itineraries-teaser__heading > p {
+    margin-top: $space-4;
+  }
+
+  .classic-itineraries-teaser__grid {
+    display: block;
+  }
+
+  .classic-itineraries-teaser .classic-itinerary-card {
+    margin-top: $space-3;
+  }
+
+  .classic-itineraries-teaser .classic-itinerary-card__image {
+    min-height: 260px;
+  }
+}

@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import { SiteLayout } from './components/layout/SiteLayout.jsx';
 import { AboutPage } from './pages/AboutPage.jsx';
 import { ContactPage } from './pages/ContactPage.jsx';
+import { ClassicItinerariesPage } from './pages/ClassicItinerariesPage.jsx';
+import { ItineraryDetailPage } from './pages/ItineraryDetailPage.jsx';
 import { DestinationsPage } from './pages/DestinationsPage.jsx';
 import { ExperiencesPage } from './pages/ExperiencesPage.jsx';
 import { HomePage } from './pages/HomePage.jsx';
@@ -17,6 +19,8 @@ function App() {
       <Route element={<SiteLayout />}>
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="classic-itineraries" element={<ClassicItinerariesPage />} />
+        <Route path="classic-itineraries/:slug" element={<ItineraryDetailPage />} />
         <Route path="destinations" element={<DestinationsPage />} />
         <Route path="experiences" element={<ExperiencesPage />} />
         <Route path="reviews" element={<ReviewsPage />} />

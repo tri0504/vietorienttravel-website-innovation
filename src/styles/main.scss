@@ -8,4 +8,8 @@
 @use 'components/hero';
 // Homepage-specific philosophy section follows the reusable hero styles.
 @use 'components/why-travel';
+@use 'components/classic-itineraries';
+@use 'components/itinerary-detail';
+@use 'components/experiences';
+@use 'components/classic-itineraries-teaser';
 @use 'utilities/utilities';

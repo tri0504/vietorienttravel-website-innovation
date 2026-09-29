@@ -1,5 +1,6 @@
 // Homepage composition for the primary travel discovery experience.
 import { Hero } from '../components/sections/Hero.jsx';
+import { ClassicItinerariesTeaser } from '../components/sections/ClassicItinerariesTeaser.jsx';
 import { WhyTravelWithViet } from '../components/sections/WhyTravelWithViet.jsx';
 
 export function HomePage() {
@@ -8,6 +9,7 @@ export function HomePage() {
       <Hero />
       {/* The philosophy section follows the hero before destinations and experiences are introduced. */}
       <WhyTravelWithViet />
+      <ClassicItinerariesTeaser />
     </div>
   );
 }
